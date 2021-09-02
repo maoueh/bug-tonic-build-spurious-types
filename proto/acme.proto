@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package acme.service.v1;
+
+import "google/protobuf/any.proto";
+
+message GenericMessage {
+  google.protobuf.Any payload = 1;
+}
